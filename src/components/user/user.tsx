@@ -20,7 +20,7 @@ export interface IUserProps {
     "hair"?: object
     "domain"?: string
     "ip"?: number
-    "address"?: string
+    "address"?: object
     "city"?: string
     "coordinates"?: object
     "postalCode"?: string
@@ -32,8 +32,9 @@ export interface IUserProps {
     children?: React.ReactNode
 
 
+
 }
-const User:FC<IUserProps> = ({id,firstName,lastName,maidenName,age,gender,image,bloodGroup}) => {
+const User:FC<IUserProps> = ({id,firstName,lastName,maidenName,age,gender,image,bloodGroup,children}) => {
     return (
         <div>
             <div>{id},{firstName},{lastName},{maidenName},{age
